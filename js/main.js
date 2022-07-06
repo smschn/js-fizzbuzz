@@ -53,6 +53,8 @@ for (i=1; i<=boxesNumber; i++) {
         newBox.className = "box";
         containerDom.append(newBox);
 
+        newBox.innerHTML = i;
+
         console.log(i);
 
     }
