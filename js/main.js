@@ -1,12 +1,14 @@
+// define variables
 const boxesNumber = parseInt(prompt('Quanti quadrati vuoi far magicamente apparire?'));
-
 const containerDom = document.getElementById('container');
 
-// for loop
+// for loop - the number of total boxes is equal to the user input
 for (i=1; i<=boxesNumber; i++) {
 
+    // if number is a multiple of 3 and 5
     if (i % 3 == 0 && i % 5 == 0) {
 
+        // creation of a <div> element, add css classes to it, write word inside it 
         const fizzBuzz = document.createElement('div');
         fizzBuzz.append(i);
         fizzBuzz.className = "box fizzBuzzClass";
@@ -16,8 +18,10 @@ for (i=1; i<=boxesNumber; i++) {
 
         console.log('FizzBuzz');
 
+    // if number is a multiple of 5
     } else if (i % 5 == 0) {
 
+        // creation of a <div> element, add css classes to it, write word inside it 
         const buzz = document.createElement('div');
         buzz.append(i);
         buzz.className = "box buzzClass";
@@ -27,8 +31,10 @@ for (i=1; i<=boxesNumber; i++) {
 
         console.log('Buzz');
 
+    // if number is a multiple of 3
     } else if (i % 3 == 0) {
 
+        // creation of a <div> element, add css classes to it, write word inside it 
         const fizz = document.createElement('div');
         fizz.append(i);
         fizz.className = "box fizzClass";
@@ -38,13 +44,16 @@ for (i=1; i<=boxesNumber; i++) {
 
         console.log('Fizz');
 
+    // for all other cases
     } else {
 
+        // creation of a <div> element, add css classes to it, write word inside it 
         const newBox = document.createElement('div');
         newBox.append(i);
         newBox.className = "box";
         containerDom.append(newBox);
 
         console.log(i);
+
     }
 }
