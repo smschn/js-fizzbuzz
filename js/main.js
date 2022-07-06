@@ -1,5 +1,5 @@
 // define variables
-const boxesNumber = parseInt(prompt('Quanti quadrati vuoi far magicamente apparire?'));
+const boxesNumber = parseInt(prompt('How many squares do you want?'));
 const containerDom = document.getElementById('container');
 
 // for loop - the number of total boxes is equal to the user input
