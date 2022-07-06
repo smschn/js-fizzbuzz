@@ -5,18 +5,14 @@ const containerDom = document.getElementById('container');
 // for loop
 for (i=1; i<=100; i++) {
 
-    // generate boxes for each iteration
-    const newBox = document.createElement('div');
-    newBox.append(i);
-    newBox.className = "box";
-    containerDom.append(newBox);
-
     if (i % 3 == 0 && i % 5 == 0) {
 
         const fizzBuzz = document.createElement('div');
         fizzBuzz.append(i);
         fizzBuzz.className = "box fizzBuzzClass";
         containerDom.append(fizzBuzz);
+
+        fizzBuzz.innerHTML = 'fizzbuzz';
 
         console.log('FizzBuzz');
 
@@ -27,6 +23,8 @@ for (i=1; i<=100; i++) {
         buzz.className = "box buzzClass";
         containerDom.append(buzz);
 
+        buzz.innerHTML = 'buzz';
+
         console.log('Buzz');
 
     } else if (i % 3 == 0) {
@@ -36,9 +34,16 @@ for (i=1; i<=100; i++) {
         fizz.className = "box fizzClass";
         containerDom.append(fizz);
 
+        fizz.innerHTML = 'fizz';
+
         console.log('Fizz');
 
     } else {
+
+        const newBox = document.createElement('div');
+        newBox.append(i);
+        newBox.className = "box";
+        containerDom.append(newBox);
 
         console.log(i);
     }
