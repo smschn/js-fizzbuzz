@@ -33,3 +33,15 @@ h1 {
     margin: 1rem;
     background-color: #1389b2;
 }
+
+.fizzBuzzClass {
+    background-color: #f0466f;
+}
+
+.buzzClass {
+    background-color: #ffd166;
+}
+
+.fizzClass {
+    background-color: #0bd6a0;
+}
