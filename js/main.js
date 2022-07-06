@@ -1,9 +1,9 @@
-let i;
+const boxesNumber = parseInt(prompt('Quanti quadrati vuoi far magicamente apparire?'));
 
 const containerDom = document.getElementById('container');
 
 // for loop
-for (i=1; i<=100; i++) {
+for (i=1; i<=boxesNumber; i++) {
 
     if (i % 3 == 0 && i % 5 == 0) {
 
